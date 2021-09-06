@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <title>Cissy Luo's Portfolio</title>
+</head>
+<body>
+
+<div class="heading">
+    <a href="index.html"><h1>QIAN XI (CISSY) LUO</h1></a>
+    <span class="icon">
+        <svg id="close" data-name="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"><path d="M12.28.31a.79.79,0,0,1,.54.22l1.65,1.65a.77.77,0,0,1,0,1.09L10.41,7.32a.27.27,0,0,0,0,.36l4.06,4.05a.77.77,0,0,1,0,1.09l-1.65,1.65a.79.79,0,0,1-1.09,0C8,10.75,7.61,10.34,7.46,10.34l-.06,0-.08.05L3.27,14.47a.79.79,0,0,1-1.09,0L.53,12.82a.77.77,0,0,1,0-1.09L4.59,7.68a.25.25,0,0,0,0-.36L.53,3.27a.77.77,0,0,1,0-1.09L2.18.53a.79.79,0,0,1,1.09,0L7.32,4.59a.27.27,0,0,0,.36,0L11.73.53a.8.8,0,0,1,.55-.22m0-.25a1,1,0,0,0-.72.29L7.5,4.41,3.44.35A1,1,0,0,0,2.72.06,1,1,0,0,0,2,.35L.35,2a1,1,0,0,0,0,1.43L4.41,7.5.35,11.56A1,1,0,0,0,.35,13L2,14.65a1,1,0,0,0,.71.29,1,1,0,0,0,.72-.29L7.5,10.59l4.06,4.06a1,1,0,0,0,.72.29,1,1,0,0,0,.71-.29L14.65,13a1,1,0,0,0,0-1.43L10.59,7.5l4.06-4.06a1,1,0,0,0,0-1.43L13,.35a1,1,0,0,0-.71-.29Z"/></svg>    <svg id="close" data-name="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"><path d="M12.28.31a.79.79,0,0,1,.54.22l1.65,1.65a.77.77,0,0,1,0,1.09L10.41,7.32a.27.27,0,0,0,0,.36l4.06,4.05a.77.77,0,0,1,0,1.09l-1.65,1.65a.79.79,0,0,1-1.09,0C8,10.75,7.61,10.34,7.46,10.34l-.06,0-.08.05L3.27,14.47a.79.79,0,0,1-1.09,0L.53,12.82a.77.77,0,0,1,0-1.09L4.59,7.68a.25.25,0,0,0,0-.36L.53,3.27a.77.77,0,0,1,0-1.09L2.18.53a.79.79,0,0,1,1.09,0L7.32,4.59a.27.27,0,0,0,.36,0L11.73.53a.8.8,0,0,1,.55-.22m0-.25a1,1,0,0,0-.72.29L7.5,4.41,3.44.35A1,1,0,0,0,2.72.06,1,1,0,0,0,2,.35L.35,2a1,1,0,0,0,0,1.43L4.41,7.5.35,11.56A1,1,0,0,0,.35,13L2,14.65a1,1,0,0,0,.71.29,1,1,0,0,0,.72-.29L7.5,10.59l4.06,4.06a1,1,0,0,0,.72.29,1,1,0,0,0,.71-.29L14.65,13a1,1,0,0,0,0-1.43L10.59,7.5l4.06-4.06a1,1,0,0,0,0-1.43L13,.35a1,1,0,0,0-.71-.29Z"/></svg>
+        <svg id="burger" data-name="burger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"><path d="M3.78,1.3h0a.2.2,0,0,1,.13,0c.16.11.13.43-.06.7a.7.7,0,0,1-.51.33.2.2,0,0,1-.13,0c-.16-.11-.13-.43.06-.7a.7.7,0,0,1,.51-.33m0-.1a.78.78,0,0,0-.59.37c-.23.32-.25.7,0,.84a.33.33,0,0,0,.19.06.78.78,0,0,0,.59-.37c.23-.32.25-.69,0-.84a.33.33,0,0,0-.19-.06Z"/><path d="M5.49,1.46c.18,0,.37.21.45.49a.81.81,0,0,1,0,.46c0,.12-.1.2-.19.22h0c-.18,0-.38-.21-.46-.49s0-.63.18-.68h.06m0-.1H5.4c-.24.07-.35.43-.24.81s.32.56.55.56h.08c.24-.07.35-.43.25-.8s-.33-.57-.55-.57Z"/><path d="M7.59.93l0,.1a.29.29,0,0,1,.22.19.81.81,0,0,1,.07.45c0,.31-.22.56-.43.56h0A.28.28,0,0,1,7.25,2a.73.73,0,0,1-.06-.45c0-.31.21-.56.4-.56V.93m0,0c-.24,0-.46.28-.5.65s.12.72.37.75h0c.24,0,.46-.28.51-.64S7.88,1,7.63.93Z"/><path d="M9.34,1.78a.66.66,0,0,1,.51.38c.16.28.16.61,0,.7a.2.2,0,0,1-.11,0,.66.66,0,0,1-.5-.37.89.89,0,0,1-.13-.45.34.34,0,0,1,.13-.26.2.2,0,0,1,.11,0m0-.1a.33.33,0,0,0-.16.05c-.22.12-.24.5,0,.84A.76.76,0,0,0,9.73,3a.29.29,0,0,0,.16,0c.22-.13.24-.5,0-.84a.78.78,0,0,0-.59-.43Z"/><path d="M11.58,1.25l0,.1c.2,0,.33.32.29.65s-.22.56-.43.56h0c-.19,0-.32-.32-.29-.65s.22-.56.41-.56v-.1m0,0c-.24,0-.46.28-.5.65s.11.73.37.76h0c.24,0,.46-.28.51-.65s-.12-.73-.37-.76Z"/><path d="M14.15,11.57a.6.6,0,0,1,.6.61V13A1.76,1.76,0,0,1,13,14.75H2A1.76,1.76,0,0,1,.25,13v-.82a.6.6,0,0,1,.6-.61h13.3m0-.25H.85a.86.86,0,0,0-.85.86V13a2,2,0,0,0,2,2H13a2,2,0,0,0,2-2v-.82a.86.86,0,0,0-.85-.86Z"/><path d="M14.23,6.82a.52.52,0,0,1,.52.52V8.79a.51.51,0,0,1-.52.51H.77a.51.51,0,0,1-.52-.51V7.34a.52.52,0,0,1,.52-.52H14.23m0-.25H.77A.78.78,0,0,0,0,7.34V8.79a.77.77,0,0,0,.77.76H14.23A.77.77,0,0,0,15,8.79V7.34a.78.78,0,0,0-.77-.77Z"/><path d="M7.5.25c3.93,0,7.25,1.56,7.25,3.41,0,.48-.31.89-.68.89H.93c-.37,0-.68-.41-.68-.89C.25,1.81,3.57.25,7.5.25M7.5,0C3.36,0,0,1.64,0,3.66A1.05,1.05,0,0,0,.93,4.8H14.07A1.05,1.05,0,0,0,15,3.66C15,1.64,11.64,0,7.5,0Z"/></svg>
+    </span>
+</div>
+
+<menu>
+        <a href="Softgoods.html"><h1>SOFT GOODS</h1></a>
+        <a href="Hardgoods.html"><h1>HARD GOODS</h1></a>
+        <a href="About.html"><h1>ABOUT</h1></a>
+        <a href="Contact.html"><h1>CONTACT</h1></a>
+        <a href="index.html"><h1>HOME</h1></a>
+
+
+</menu>
+
+
+<main>
+    <div class="projectHeading">
+        <h1>
+            DRAGON BACKPACK
+        </h1>
+        <img class="preview" src="Images/dragonbackpack/home.jpg">
+
+    </div>
+
+    <p class="hp">GOAL</p>
+    <p class="p">To design a creature backpack that maintains some ambiguity, which allows grown-ups to feel more comfortable wearing cute backpacks. The material choice should be sustainable, and the construction should be able to be disassembled for repair and recycling.</p>
+    <p class="hp">USER & NEEDS</p>
+    <p class="p">High school or college students who are reminiscing cute backpacks from childhood, but can't find a cute backpack large enough to carry all their items, or feel too shy to wear cartoon backpacks.</p>
+    <p class="hp">ITEMS TO CARRY</p>
+    <ol class="p">
+        <li>14"-16" Laptop</li>
+        <li>Large Pen Case</li>
+        <li>Water Bottle</li>
+        <li>Umbrella</li>
+        <li>Electronic Charging Devices</li>
+        <li>Pockets for Miscellaneous Items</li>
+    </ol>
+
+    <p class="hp">IDEATION SKETCHES</p>
+    <div class="imgGroup">
+        <img class="doubleindi" src="Images/dragonbackpack/d.jpg">
+        <img class="doubleindi" src="Images/dragonbackpack/a.jpg">
+        <img class="doubleindi" src="Images/dragonbackpack/b.jpg">
+        <img class="doubleindi" src="Images/dragonbackpack/c.jpg">
+    </div>
+
+    <p class="hp">PATTERN MAKING PROCESS</p>
+    <div class="imgGroup">
+        <img class="tripleindi" src="Images/dragonbackpack/process.jpg">
+        <img class="tripleindi" src="Images/dragonbackpack/process2.jpg">
+        <img class="tripleindi" src="Images/dragonbackpack/process3.jpg">
+
+    </div>
+
+    <p class="hp">COLOR STUDIES & PATTERN LAYOUT</p>
+    <div class="imgGroup">
+        <img class="doubleindi" src="Images/dragonbackpack/Untitled_Artwork (12).2.png">
+        <img class="doubleindi" src="Images/dragonbackpack/pattern.jpg">
+
+    </div>
+    <p class="hp">ORTHOGRPAHIC & EXPLODED VIEWS</p>
+    <div class="imgGroup">
+        <img class="doubleindi" src="Images/dragonbackpack/ortho.png">
+        <img class="doubleindi" src="Images/dragonbackpack/exploded.jpg">
+    </div>
+
+    <p class="hp">PROTOTYPE</p>
+    <div class="imgGroup">
+        <img class="tripleindi" src="Images/dragonbackpack/final1.JPG">
+        <img class="tripleindi" src="Images/dragonbackpack/final2.JPG">
+        <img class="tripleindi" src="Images/dragonbackpack/final3.JPG">
+    </div>
+
+    <p class="hp">FEATURES</p>
+    <div class="imgGroup">
+        <img class="tripleindi" src="Images/dragonbackpack/features.jpg">
+        <img class="tripleindi" src="Images/dragonbackpack/features2.jpg">
+        <img class="tripleindi" src="Images/dragonbackpack/features3.jpg">
+    </div>
+
+    
+    <p class="hp">COLOR SWATCHES & BOM</p>
+    <p class="p">Exterior and interior fabrics are all 100% cotton, and hardware are durable metal. No glued on interfacing was used.</p>
+    <div class="imgGroup">
+        <img class="singleindi" src="Images/dragonbackpack/bom.jpg">
+    </div>
+</main>
+
+<div class="secBreak">
+    <span></span>
+
+</div>
+
+<main>
+
+    <div class="ending">
+        <p>E-mail:</p>
+        <p>qluo@alumni.risd.edu</p>
+        <p>This website is designed and coded by Cissy Luo.</p>
+    </div>
+
+
+</main>
+
+
+</body>
+</html>

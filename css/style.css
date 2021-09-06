@@ -1,0 +1,246 @@
+:root{
+    --iconSizeWeb: 3vw;
+    --headingBorderWeb: 1vw;
+}
+
+.secBreak span{
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+    background-color: black;
+    display:block;     /* block allows you to set width and height while the default inline don't, so without inline-block the line disappears */
+}
+
+/* Heading */
+.heading {
+    position: fixed;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: calc(var(--iconSizeWeb) + var(--headingBorderWeb)*2);
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    z-index: 999;
+}
+
+.heading h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: calc((100vw)*0.02);
+    letter-spacing: calc(0.25*((100vw)*0.01));      /*0.38 times font size*/
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: baseline;
+    line-height: var(--iconSizeWeb);     /* same height as icon */
+    padding-top: var(--headingBorderWeb);
+    padding-bottom: var(--headingBorderWeb);
+    padding-left: var(--headingBorderWeb);
+}
+
+#burger {
+    display:inline;
+    width: var(--iconSizeWeb);
+    height: var(--iconSizeWeb);
+    top: var(--headingBorderWeb);
+    right: var(--headingBorderWeb);
+    position: fixed;
+
+}
+
+#close {
+    display: none;
+    width: var(--iconSizeWeb);
+    height: var(--iconSizeWeb);
+    top: var(--headingBorderWeb);
+    right: var(--headingBorderWeb);
+    position: fixed;
+
+}
+/* Heading */
+
+
+/*Navigation Menu */
+menu {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: calc((100vw/5)*0.03);
+    letter-spacing: calc(0.38*((100vw/5)*0.03));/*0.38 times font size*/
+    text-align: center;
+
+    margin: 0 auto;
+    display: none;
+    flex-flow: column;
+    justify-content: center;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    background-color: whitesmoke;
+    width: 100%;
+    height: 0vh;
+
+    z-index: 998;
+
+}
+
+/*Navigation Menu */
+
+/* Main */
+main {
+    position: static;
+    margin: calc(var(--iconSizeWeb) + var(--headingBorderWeb)*2) auto;
+}
+
+.projectHeading {
+
+    display: grid;
+    margin: 0 auto;
+    padding-top: 4vw;
+    width: 80vw;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 25vw;
+
+}
+
+.projectHeading h1 {
+    text-align: left;
+    margin: auto auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: calc((100vw)*0.02);
+    letter-spacing: calc(0.25*((100vw)*0.01));/*0.38 times font size*/
+}
+/* Main */
+/* Image Display Template */
+
+.preview {
+    width: 25vw;
+    height: 25vw;
+    margin: 0 auto;
+    object-fit: contain;
+    image-resolution: 150dpi;
+}
+
+.imgGroup {
+    margin: 0 auto;
+    padding-top: 2vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    object-position: 50% 50%;
+    gap: 2.5vw;
+    image-resolution: 150dpi;
+}
+
+.singleindi{
+    width: 80vw;
+    height: auto;
+    object-fit: contain;
+
+}
+
+.quadindi{
+    width: 18.125vw;
+    height: auto;
+    object-fit: contain;
+
+}
+
+.tripleindi{
+    width: 25vw;
+    height: auto;
+    object-fit: contain;
+
+}
+
+.doubleindi{
+    width: 38.75vw;
+    height: auto;
+    object-fit: contain;
+
+}
+/* Image Display Template */
+
+
+/* Blocks of Texts */
+.intro {
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    margin: 0 auto;
+    width: 80vw;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: calc((100vw)*0.02);
+    letter-spacing: calc(0.25*((100vw)*0.01));/*0.38 times font size*/
+}
+
+
+.p {
+    padding-top: 2vw;
+    margin: 0 auto;
+    width: 80vw;
+    text-align: left;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: calc((100vw)*0.02);
+    font-weight: 300;
+    letter-spacing: calc(0.25*((100vw)*0.01));/*0.38 times font size*/
+}
+
+.hp {
+    padding-top: 4vw;
+    margin: 0 auto;
+    width: 80vw;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: calc((100vw)*0.02);
+    font-weight: 500;
+    letter-spacing: calc(0.25*((100vw)*0.01));/*0.38 times font size*/
+}
+
+.h1 {
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    margin: 0 auto;
+    width: 80vw;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: calc((100vw)*0.02);
+    letter-spacing: calc(0.25*((100vw)*0.01));/*0.38 times font size*/
+}
+
+.ending {
+    margin: 0 auto;
+    width: 80vw;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: calc((100vw)*0.02);
+    letter-spacing: calc(0.25*((100vw)*0.02));/*0.38 times font size*/
+}
+
+.title {
+    text-align: center;
+    line-height: .5vw;
+    padding-top: 0;
+    color: black;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: calc((100vw)*0.02)*0.75;
+    letter-spacing: calc(0.25*((100vw)*0.01));/*0.38 times font size*/
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+
+}
+
+a:visited {
+    color: black;
+}
+
+.title:visited {
+    color: black;
+    text-decoration: none;
+
+}
+/* Blocks of Texts */
